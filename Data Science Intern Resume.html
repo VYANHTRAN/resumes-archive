@@ -115,6 +115,19 @@
             font-style: italic;
             margin-bottom: 5px;
         }
+        
+        /* Links in headers */
+        .repo-link {
+            font-weight: normal;
+            font-size: 0.9em;
+            color: #000;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+        .repo-link:hover {
+            text-decoration: underline;
+            color: #333;
+        }
 
         /* Lists */
         ul {
@@ -163,7 +176,7 @@
             <div class="job-title">DATA SCIENTIST INTERN</div>
             <div class="header-line"></div>
             <div class="contact-info">
-                +84 328 765 904 | vya123.work@gmail.com | <a href="https://github.com/VYANHTRAN" target="_blank">https://github.com/VYANHTRAN</a>
+                +84 328 765 904 | vya123.work@gmail.com | <a href="https://github.com/VYANHTRAN" target="_blank">github.com/VYANHTRAN</a>
             </div>
         </header>
 
@@ -183,7 +196,7 @@
                     <span class="entry-date">May 2025 - Present</span>
                 </div>
                 <ul>
-                    <li>Crawled and cleaned 50,000+ rows of real estate pricing data to train machine learning models for accurate property price prediction.</li>
+                    <li>Analyzed 50,000+ rows of real estate pricing data to support the training of machine learning models for accurate property price prediction.</li>
                     <li>Geocoded over 100,000 locations to support route optimization for travelling property valuation specialists, reducing travel time and operational inefficiencies.</li>
                     <li>Collected and digitized zoning and land-use data for all 63 provinces, creating comprehensive, GIS-compatible planning maps for internal analytics and visualization.</li>
                 </ul>
@@ -223,13 +236,33 @@
         <section>
             <h2 class="section-title">ACHIEVEMENTS & PROJECTS</h2>
 
+            <!-- Project 1 (New Real Estate Pipeline) -->
             <div class="entry">
                 <div class="entry-header">
-                    <span class="entry-title">WiDS Datathon 2025 – ADHD Classification Challenge</span>
+                    <span class="entry-title">
+                        Automated Real Estate Data ETL Pipeline & Analytics System
+                        <a href="https://github.com/PhamMaiLinh-2403/estates-app" target="_blank" class="repo-link">[GitHub]</a>
+                    </span>
+                </div>
+                <div class="project-desc">A fault-tolerant full-stack data pipeline and dashboard for real estate market analysis</div>
+                <ul>
+                    <li>Engineered a fault-tolerant ETL pipeline using <strong>Python</strong> and <strong>Selenium</strong>, implementing multi-threading, custom Circuit Breakers, and state persistence to bypass anti-bot protections and ensure seamless resume-on-failure capabilities.</li>
+                    <li>Developed an advanced data processing engine using <strong>Pandas</strong> and <strong>SQLite</strong>, utilizing Regex and fuzzy logic to standardize unstructured addresses against official administrative databases and impute missing property metrics.</li>
+                    <li>Deployed a self-healing automation system via <strong>FastAPI</strong> and <strong>APScheduler</strong> that manages weekly data ingestion, featuring auto-recovery mechanisms and a web dashboard for system monitoring and on-demand reporting.</li>
+                </ul>
+            </div>
+
+            <!-- Project 2 (WiDS) -->
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">
+                        WiDS Datathon 2025 – ADHD Classification Challenge
+                        <a href="https://github.com/VYANHTRAN/wids-2025-submission" target="_blank" class="repo-link">[GitHub]</a>
+                    </span>
                 </div>
                 <div class="project-desc">Global data science competition focused on computational neuroscience and mental health prediction</div>
                 <ul>
-                    <li>Developed a stacked ensemble pipeline to predict ADHD diagnosis and sex using multi-modal data (fMRI-based connectomes, demographics, and behavioral scores), combining specialized models across five engineered feature kernels</li>
+                    <li>Developed a stacked ensemble pipeline to predict ADHD diagnosis and sex using multi-modal data (fMRI-based connectomes, demographics, and behavioral scores), combining specialized models across five engineered feature kernels.</li>
                     <li>Applied advanced techniques including Riemannian geometry, spectral graph embeddings, and Laplacian eigenvalue analysis to handle high-dimensional neuroimaging data (~20,000 features per subject).</li>
                     <li>Automated hyperparameter tuning with Optuna and used MLflow for experiment tracking, ensuring robust model performance and reproducibility in a computationally intensive setting.</li>
                 </ul>
@@ -240,7 +273,7 @@
         <section>
             <h2 class="section-title">CERTIFICATIONS & SKILLS</h2>
             <div class="skills-list">
-                <p><span class="skill-label">Technical Skills:</span> Python for Data Science, SQL, Tableau, Excel, Google Sheet, Probability & Statistics.</p>
+                <p><span class="skill-label">Technical Skills:</span> Python (Pandas, Selenium, FastAPI), SQL, Tableau, Excel, Google Sheet, Probability & Statistics.</p>
                 <p><span class="skill-label">Languages:</span> English, Chinese.</p>
                 <p><span class="skill-label">Certifications:</span> IELTS (8.0).</p>
             </div>
